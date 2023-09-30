@@ -1,6 +1,7 @@
 {
     "homepage": "https://github.com/binbyu/Reader",
     "description": "A win32 txt file reader",
+    "license":"Unlicense",
     "version": "2.0.0.3",
     "architecture": {
         "64bit": {

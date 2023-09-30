@@ -1,7 +1,7 @@
 {
     "homepage": "https://us.fontviewer.de/",
     "description": "dp4 Font Viewer is a freeware for Windows for viewing and managing fonts.",
-    "license": "none",
+    "license": "Unlicense",
     "version": "3.4",
     "architecture": {
         "64bit": {
