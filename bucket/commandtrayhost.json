@@ -3,7 +3,10 @@
     "description": "A command line program monitor systray for Windows",
     "homepage": "https://github.com/rexdf/CommandTrayHost",
     "license": "MIT",
-    "url": "https://github.com/rexdf/CommandTrayHost/releases/download/2.3-b450/CommandTrayHost-2.3-b450.zip",
+    "url": [
+        "https://github.com/rexdf/CommandTrayHost/releases/download/2.3-b450/CommandTrayHost-2.3-b450.zip",
+        "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/config.json"
+    ],
     "hash": "7D3AD1CA241BFD0DDB8BA48F7E85DC983F912D5881B22271CA9585129355AD87",
     "architecture": {
         "64bit": {
