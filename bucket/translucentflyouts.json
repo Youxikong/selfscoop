@@ -13,10 +13,6 @@
             "hash": [
                 "0BF78E29EADB7E5ECC926560738BE4BE4A51FB841F27F1F3D90EC06497F40754",
                 "92B9371C61F37DDC8248A8CAADB076C5A52C544FF1CC921DC408C4491CAAD75E"
-            ],
-            "extract_to": [
-                "x64",
-                "x86"
             ]
         },
         "32bit": {
@@ -24,6 +20,10 @@
             "hash": "92B9371C61F37DDC8248A8CAADB076C5A52C544FF1CC921DC408C4491CAAD75E"
         }
     },
+    "extract_to": [
+        "x64",
+        "x86"
+    ],
     "installer": {
         "script": [
             "if ( $architecture -eq \"64bit\" ) {",
