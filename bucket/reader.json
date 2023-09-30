@@ -1,0 +1,38 @@
+{
+    "homepage": "https://github.com/binbyu/Reader",
+    "description": "A win32 txt file reader",
+    "version": "2.0.0.3",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/binbyu/Reader/releases/download/v2.0.0.3/Reader_v2.0.0.3_x64.7z",
+            "hash": "8714ce9160d41b23dca53b1a914f073d51b16b470cdb17c8ad4b7260893d0884"
+        },
+        "32bit": {
+            "url": "https://github.com/binbyu/Reader/releases/download/v2.0.0.3/Reader_v2.0.0.3.7z",
+            "hash": "68bf3cff984207b4d91c44734968aa2d6db10bfca2ae82596218b471fccf1e20"
+        }
+    },
+    "pre_install": "'.bs_bak.json', '.cache.dat' | ForEach-Object { if (!(Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" -ItemType File -Force | Out-Null } }",
+    "shortcuts": [
+        [
+            "Reader.exe",
+            "Reader"
+        ]
+    ],
+    "persist": [
+        ".online",
+        ".bs_bak.json",
+        ".cache.dat"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/binbyu/Reader/releases/download/v$version/Reader_v$version_x64.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/binbyu/Reader/releases/download/v$version/Reader_v$version.7z"
+            }
+        }
+    }
+}

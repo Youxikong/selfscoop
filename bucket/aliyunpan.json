@@ -1,0 +1,49 @@
+{
+    "homepage": "https://github.com/tickstep/aliyunpan",
+    "license": "Apache-2.0",
+    "version": "0.2.7",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.2.7/aliyunpan-v0.2.7-windows-x64.zip",
+            "hash": "a099118d483dff7764dc4e25c7750476ca36fbef73c7b0b12db19ae27ce40c0d",
+            "extract_dir": "aliyunpan-v0.2.7-windows-x64"
+        },
+        "32bit": {
+            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.2.7/aliyunpan-v0.2.7-windows-x86.zip",
+            "hash": "be5a48fcb55225884890c83632bcd77b46610df4c3c5f8db736c46a726fb0a74",
+            "extract_dir": "aliyunpan-v0.2.7-windows-x86"
+        },
+        "arm": {
+            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.2.3/aliyunpan-v0.2.3-windows-arm.zip",
+            "hash": "",
+            "extract_dir": "aliyunpan-v0.2.7-windows-arm"
+        }
+    },
+    "bin": "aliyunpan.exe",
+    "pre_install": [
+        "if(!(Test-Path \"$persist_dir\\\")) { New-Item -Path \"$persist_dir\\\" -ItemType Directory | Out-Null }",
+        "'aliyunpan_command_history.txt', 'aliyunpan_config.json' | ForEach-Object { if (!(Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" -ItemType File -Force | Out-Null } }"
+    ],
+    "env_set": {
+        "ALIYUNPAN_CONFIG_DIR": "$persist_dir"
+    },
+    "checkver": {
+        "github": "https://github.com/tickstep/aliyunpan"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/tickstep/aliyunpan/releases/download/v$version/aliyunpan-v$version-windows-x64.zip",
+                "extract_dir": "aliyunpan-v$version-windows-x64"
+            },
+            "32bit": {
+                "url": "https://github.com/tickstep/aliyunpan/releases/download/v$version/aliyunpan-v$version-windows-x86.zip",
+                "extract_dir": "aliyunpan-v$version-windows-x86"
+            },
+            "arm": {
+                "url": "",
+                "extract_dir": "aliyunpan-v$version-windows-arm"
+            }
+        }
+    }
+}
