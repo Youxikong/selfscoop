@@ -7,12 +7,12 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/ALTaleX531/TranslucentFlyouts/releases/download/v2.1.0/TranslucentFlyoutsV2.x64.rar",
-                "https://github.com/ALTaleX531/TranslucentFlyouts/releases/download/v2.1.0/TranslucentFlyoutsV2.x86.optional.rar"
+                "https://github.com/ALTaleX531/TranslucentFlyouts/releases/download/v2.1.0/TranslucentFlyoutsV2.x86.optional.rar",
+                "https://github.com/ALTaleX531/TranslucentFlyouts/releases/download/v2.1.0/TranslucentFlyoutsV2.x64.rar"
             ],
             "hash": [
-                "0BF78E29EADB7E5ECC926560738BE4BE4A51FB841F27F1F3D90EC06497F40754",
-                "92B9371C61F37DDC8248A8CAADB076C5A52C544FF1CC921DC408C4491CAAD75E"
+                "92B9371C61F37DDC8248A8CAADB076C5A52C544FF1CC921DC408C4491CAAD75E",
+                "0BF78E29EADB7E5ECC926560738BE4BE4A51FB841F27F1F3D90EC06497F40754"
             ]
         },
         "32bit": {
@@ -21,8 +21,8 @@
         }
     },
     "extract_to": [
-        "x64",
-        "x86"
+        "x86",
+        "x64"
     ],
     "installer": {
         "script": [
@@ -57,8 +57,8 @@
         "architecture": {
             "64bit": {
                 "url": [
-                    "https://github.com/ALTaleX531/TranslucentFlyouts/releases/download/v$version/TranslucentFlyoutsV2.x64.rar",
-                    "https://github.com/ALTaleX531/TranslucentFlyouts/releases/download/v$version/TranslucentFlyoutsV2.x86.optional.rar"
+                    "https://github.com/ALTaleX531/TranslucentFlyouts/releases/download/v$version/TranslucentFlyoutsV2.x86.optional.rar",
+                    "https://github.com/ALTaleX531/TranslucentFlyouts/releases/download/v$version/TranslucentFlyoutsV2.x64.rar"
                 ]
             },
             "32bit": {
