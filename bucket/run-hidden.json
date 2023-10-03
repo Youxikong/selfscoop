@@ -2,9 +2,9 @@
     "homepage": "https://github.com/stax76/run-hidden",
     "description": "run-hidden runs Windows console apps like PowerShell with hidden console window.",
     "license": "MIT",
-    "version": "1.2",
-    "url": "https://github.com/stax76/run-hidden/releases/download/v1.2/run-hidden-v1.2.zip",
-    "hash": "200F28531D41F1CB9C0BA81258BD89C149276BEC806EA10BFEAC86DD6E16C36F",
+    "version": "1.1",
+    "url": "https://github.com/stax76/run-hidden/releases/download/v1.1/run-hidden-v1.1.zip",
+    "hash": "34a0122c7aad2e75a0dc5a9d5a5769dfbf5a260dca33880386dd6eec15cc6459",
     "bin": "run-hidden.exe",
     "checkver": "github",
     "autoupdate": {
