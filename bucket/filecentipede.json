@@ -2,7 +2,7 @@
     "homepage": "http://filecxx.com/",
     "description": "Cross-platform internet upload/download manager for HTTP(S), FTP(S), SSH, magnet-link, BitTorrent, m3u8, ed2k, and online videos. WebDAV client, FTP client, SSH client.",
     "license": "Unlicense",
-    "version": "2.82",
+    "version": "2.82.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/filecxx/FileCentipede/releases/download/v2.82.0/filecxx_2.82_win_x64.zip",
@@ -44,7 +44,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/filecxx/FileCentipede/releases/download/v$version/filecxx_$version_win_x64.zip"
+                "url": "https://github.com/filecxx/FileCentipede/releases/download/$version/filecxx_$version_win_x64.zip"
             }
         }
     }
