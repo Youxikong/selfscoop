@@ -1,22 +1,22 @@
 {
     "homepage": "https://github.com/tickstep/aliyunpan",
     "license": "Apache-2.0",
-    "version": "0.2.7",
+    "version": "0.2.8",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.2.7/aliyunpan-v0.2.7-windows-x64.zip",
-            "hash": "a099118d483dff7764dc4e25c7750476ca36fbef73c7b0b12db19ae27ce40c0d",
-            "extract_dir": "aliyunpan-v0.2.7-windows-x64"
+            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.2.8/aliyunpan-v0.2.8-windows-x64.zip",
+            "hash": "69a533e9d074f8444098a7562ae03a23e61cd29f42a6d1bf0a7537bd26ad5b97",
+            "extract_dir": "aliyunpan-v0.2.8-windows-x64"
         },
         "32bit": {
-            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.2.7/aliyunpan-v0.2.7-windows-x86.zip",
-            "hash": "be5a48fcb55225884890c83632bcd77b46610df4c3c5f8db736c46a726fb0a74",
-            "extract_dir": "aliyunpan-v0.2.7-windows-x86"
+            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.2.8/aliyunpan-v0.2.8-windows-x86.zip",
+            "hash": "c4da0b403f42fbf38043f9e68495fa148e246fe4d3bda32109ef3b740b96e085",
+            "extract_dir": "aliyunpan-v0.2.8-windows-x86"
         },
         "arm64": {
-            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.2.7/aliyunpan-v0.2.7-windows-arm.zip",
-            "hash":"2BCB2EEBC0FAFCA33642B9ECFB54A7163DE61337A589DDF92DE36875733A9664",
-            "extract_dir": "aliyunpan-v0.2.7-windows-arm"
+            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.2.8/aliyunpan-v0.2.8-windows-arm.zip",
+            "hash": "6f628d54434961702e56a534c86013dda831dac1a2df90361502a99f3ac75991",
+            "extract_dir": "aliyunpan-v0.2.8-windows-arm"
         }
     },
     "bin": "aliyunpan.exe",
@@ -41,8 +41,8 @@
                 "extract_dir": "aliyunpan-v$version-windows-x86"
             },
             "arm64": {
-                "url":"https://github.com/tickstep/aliyunpan/releases/download/v$version/aliyunpan-v$version-windows-arm.zip",
-                "extract_dir":"aliyunpan-v$version-windows-arm"
+                "url": "https://github.com/tickstep/aliyunpan/releases/download/v$version/aliyunpan-v$version-windows-arm.zip",
+                "extract_dir": "aliyunpan-v$version-windows-arm"
             }
         }
     }
