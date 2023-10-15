@@ -2,6 +2,9 @@
     "homepage": "https://github.com/qjfoidnh/BaiduPCS-Go",
     "license": "Apache-2.0",
     "version": "3.9.5",
+    "suggest": {
+        "Icon": "nirsoft/iconsextract"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/v3.9.5/BaiduPCS-Go-v3.9.5-windows-x64.zip",
