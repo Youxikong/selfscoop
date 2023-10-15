@@ -22,7 +22,8 @@
     "bin": "aliyunpan.exe",
     "pre_install": [
         "if(!(Test-Path \"$persist_dir\\\")) { New-Item -Path \"$persist_dir\\\" -ItemType Directory | Out-Null }",
-        "'aliyunpan_command_history.txt', 'aliyunpan_config.json' | ForEach-Object { if (!(Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" -ItemType File -Force | Out-Null } }"
+        "if( Get-Command iconsext.exe ) { iconsext.exe /save $dir\\aliyunpan.exe $dir -icons",
+        "Rename-Item -Path $dir\\aliyunpan_2.ico -NewName aliyunapn.ico}"
     ],
     "env_set": {
         "ALIYUNPAN_CONFIG_DIR": "$persist_dir"
