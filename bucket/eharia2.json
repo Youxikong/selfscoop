@@ -1,12 +1,12 @@
 {
     "homepage": "https://github.com/Jvcon/EhAria2",
     "description": "A aira2 GUI made by Autohotkey.",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "license": "GPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Jvcon/EhAria2/releases/download/v0.2.2/EhAria2_v0.2.2.zip",
-            "hash": "32d74e500b83e3ab1f1d5952769507f1f928ec1043c871c89ce0d4ccea123a75"
+            "url": "https://github.com/Jvcon/EhAria2/releases/download/v0.2.3/EhAria2_v0.2.3.zip",
+            "hash": "3de6cd3a9b693e7acc04e277ee68d99eda48c64ed3781dab2596309149f41b23"
         }
     },
     "pre_install": [
