@@ -1,0 +1,35 @@
+{
+    "version": "5.0.0",
+    "description": "Feature-rich minimalist proximity-based UI for MPV player.",
+    "homepage": "https://github.com/tomasklaen/uosc",
+    "license": "LGPL-2.1-or-later",
+    "notes": "Read $dir\\uosc.conf and edit $(appdir mpv $global)\\current\\portable_config\\settings.conf to configure",
+    "url": [
+        "https://github.com/tomasklaen/uosc/releases/download/5.0.0/uosc.zip",
+        "https://github.com/tomasklaen/uosc/releases/download/5.0.0/uosc.conf"
+    ],
+    "hash": [
+        "d7109a351d9d5c671523a5e2479bce9c79fbf08e18a0aa09e553557770bdaf5d",
+        "4316da2af6cf0b0cbb2da606ef075f4c353c138b9d736485cc592c64729275bc"
+    ],
+    "post_install": [
+        "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
+        "Copy-Item -Path $dir\\fonts -Destination $Target -Recurse -Force",
+        "Copy-Item -Path $dir\\scripts -Destination $Target -Recurse -Force"
+    ],
+    "uninstaller": {
+        "script": [
+            "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
+            "Remove-Item -Path $Target\\fonts\\uosc_icons.otf",
+            "Remove-Item -Path $Target\\fonts\\uosc_textures.ttf",
+            "Remove-Item -Path $Target\\scripts\\uosc -Recurse"
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": [
+            "https://github.com/tomasklaen/uosc/releases/download/$version/uosc.zip",
+            "https://github.com/tomasklaen/uosc/releases/download/$version/uosc.conf"
+        ]
+    }
+}

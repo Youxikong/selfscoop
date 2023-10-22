@@ -1,0 +1,58 @@
+{
+    "version": "20231022",
+    "description": "Video player based on MPlayer/mplayer2 (builds by shinchiro)",
+    "homepage": "https://mpv.io",
+    "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
+    "notes": [
+        "To set and unset file type associations and AutoPlay handlers, run '$dir\\installer\\mpv-install.bat' and '$dir\\installer\\mpv-uninstall.bat' as administrator, respectively.",
+        "You can use Icaros ('nonportable/icaros-np') to enable thumbnails for all media types.",
+        "Modify '$dir\\portable_config\\settings.conf' to configure"
+    ],
+    "suggest": {
+        "yt-dlp": "yt-dlp",
+        "ffmpeg": "ffmpeg",
+        "uosc": "self/uosc"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20231022/mpv-x86_64-v3-20231022-git-6e428c2.7z",
+            "hash": "13559ecc032de992f4d1806c415df457e88cc38d36faa82982dc50bb9cedf9ea"
+        },
+        "32bit": {
+            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20231022/mpv-i686-20231022-git-6e428c2.7z",
+            "hash": "f1e7632d9b3d48659e30627fc025497c5f6cbae51a0a312769b4cf67f1d93cde"
+        }
+    },
+    "post_install": [
+        "New-Item -Path $persist_dir\\portable_config\\mpv.conf -ItemType File -Value @{ include = \"~~/settings.conf\"",
+        "} -Force | Out-Null",
+        "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/mpv.conf | Add-Content -Path $persist_dir\\portable_config\\mpv.conf",
+        "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/input_uosc.conf -OutFile $persist_dir\\portable_config\\input_uosc.conf",
+        "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/profiles.conf -OutFile $persist_dir\\portable_config\\profiles.conf",
+        "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/script-opts.conf -OutFile $persist_dir\\portable_config\\script-opts.conf",
+        "if ( !( Test-Path $persist_dir\\portable_config\\settings.conf ) ) { New-Item -Path $persist_dir\\portable_config\\settings.conf | Out-Null }"
+    ],
+    "env_add_path": ".",
+    "shortcuts": [
+        [
+            "mpv.exe",
+            "mpv"
+        ]
+    ],
+    "persist": "portable_config",
+    "checkver": {
+        "url": "https://api.github.com/repos/shinchiro/mpv-winbuild-cmake/releases/latest",
+        "jsonpath": "$.assets[*].browser_download_url",
+        "regex": "mpv-x86_64-v3-(\\d+)-git-(?<commit>[\\da-f]+)\\.7z"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/$version/mpv-x86_64-v3-$version-git-$matchCommit.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/$version/mpv-i686-$version-git-$matchCommit.7z"
+            }
+        }
+    }
+}
