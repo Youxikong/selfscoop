@@ -24,9 +24,8 @@
         }
     },
     "post_install": [
-        "New-Item -Path $persist_dir\\portable_config\\mpv.conf -ItemType File -Value @{ include = \"~~/settings.conf\"",
-        "} -Force | Out-Null",
-        "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/mpv.conf | Add-Content -Path $persist_dir\\portable_config\\mpv.conf",
+        "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/mpv.conf -OutFile $persist_dir\\portable_config\\mpv.conf",
+        "Add-Content -Path $persist_dir\\portable_config\\mpv.conf -Value ' include = \"~~/settings.conf\"'",
         "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/input_uosc.conf -OutFile $persist_dir\\portable_config\\input_uosc.conf",
         "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/profiles.conf -OutFile $persist_dir\\portable_config\\profiles.conf",
         "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/script-opts.conf -OutFile $persist_dir\\portable_config\\script-opts.conf",
