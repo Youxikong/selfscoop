@@ -4,6 +4,7 @@
     "homepage": "https://github.com/tomasklaen/uosc",
     "license": "LGPL-2.1-or-later",
     "notes": "Read $dir\\uosc.conf and edit $(appdir mpv $global)\\current\\portable_config\\settings.conf to configure",
+    "depends": "mpv",
     "url": [
         "https://github.com/tomasklaen/uosc/releases/download/5.0.0/uosc.zip",
         "https://github.com/tomasklaen/uosc/releases/download/5.0.0/uosc.conf"
