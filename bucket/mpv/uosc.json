@@ -3,7 +3,7 @@
     "description": "Feature-rich minimalist proximity-based UI for MPV player.",
     "homepage": "https://github.com/tomasklaen/uosc",
     "license": "LGPL-2.1-or-later",
-    "notes": "Read $dir\\uosc.conf and edit $(appdir mpv $global)\\current\\portable_config\\settings.conf to configure",
+    "notes": "Read $dir\\uosc.conf and edit settings.conf to configure",
     "depends": "mpv",
     "url": [
         "https://github.com/tomasklaen/uosc/releases/download/5.0.0/uosc.zip",

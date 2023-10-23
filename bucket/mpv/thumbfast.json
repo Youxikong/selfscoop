@@ -1,0 +1,30 @@
+{
+    "version": "4241c7d",
+    "description": "High-performance on-the-fly thumbnailer script for mpv",
+    "homepage": "https://github.com/po5/thumbfast",
+    "license": "MPL-2.0",
+    "notes": "Read $dir\\thumbfast.conf and editsettings.conf to configure",
+    "url": "https://github.com/po5/thumbfast/archive/refs/heads/master.zip",
+    "hash": "CD36A47E8E8913260428C4D2368468995AE99BC4A42E02FFF00DFE678DFD5A45",
+    "depends": "mpv",
+    "extract_dir": [
+        "thumbfast-master"
+    ],
+    "post_install": [
+        "$Target = $(appdir mpv $global) + \"\\current\\portable_config\\scripts\"",
+        "Copy-Item -Path $dir\\thumbfast.lua -Destination $Target -Force"
+    ],
+    "uninstaller": {
+        "script": [
+            "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
+            "Remove-Item -Path $Target\\scripts\\thumbfast.lua"
+        ]
+    },
+    "checkver": {
+        "url": "https://github.com/po5/thumbfast/commits/master/",
+        "regex": "<span class=\"Button-label\">([a-z\\d]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/po5/thumbfast/archive/refs/heads/master.zip"
+    }
+}
