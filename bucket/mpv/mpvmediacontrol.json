@@ -1,0 +1,39 @@
+{
+    "version": "0.2.1",
+    "description": "Windows 10 System Media Transport Controls (SMTC) for MPV (or any other programs)",
+    "homepage": "https://github.com/datasone/MPVMediaControl",
+    "license": "MIT",
+    "notes": "Read $dir\\notify_media.conf and edit settings.conf to configure",
+    "depends": "mpv",
+    "url": [
+        "https://github.com/datasone/MPVMediaControl/releases/download/0.2.1/MPVMediaControl.exe",
+        "https://github.com/datasone/MPVMediaControl/releases/download/0.2.1/notify_media.conf",
+        "https://github.com/datasone/MPVMediaControl/releases/download/0.2.1/notify_media.lua"
+    ],
+    "hash": [
+        "cb03e15ad955d52108b6c0fb5142699fb4aead32ced6efc2976de15febc40805",
+        "a7897abf9d3cb2ce40bb539075d8aa58e1f9930d77b8fd775a150cae07c8d3c0",
+        "7ca262238d4bfbcf158322487536ae42bd5e0e6a1b083b3840782d49ebd62274"
+    ],
+    "post_install": [
+        "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
+        "if ( !(Test-Path $Target\\bin) ){ New-Item -Path $Target\\bin -ItemType Directory | Out-Null }",
+        "Copy-Item -Path $dir\\MPVMediaControl.exe -Destination $Target\\bin -Force",
+        "Copy-Item -Path $dir\\notify_media.lua -Destination $Target\\scripts -Force"
+    ],
+    "uninstaller": {
+        "script": [
+            "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
+            "Remove-Item -Path $Target\\bin\\MPVMediaControl.exe",
+            "Remove-Item -Path $Target\\scripts\\notify_media.lua"
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": [
+            "https://github.com/datasone/MPVMediaControl/releases/download/$version/MPVMediaControl.exe",
+            "https://github.com/datasone/MPVMediaControl/releases/download/$version/notify_media.conf",
+            "https://github.com/datasone/MPVMediaControl/releases/download/$version/notify_media.lua"
+        ]
+    }
+}
