@@ -1,0 +1,28 @@
+{
+    "version": "ddb1e6b",
+    "description": "Keeps selected property values (like volume) between player sessions",
+    "homepage": "https://github.com/d87/mpv-persist-properties",
+    "license": "MIT",
+    "notes": "Read README.md and edit settings.conf to configure, better to set 'configs' to '~~/input_settings.conf'.",
+    "url": "https://github.com/d87/mpv-persist-properties/archive/refs/heads/master.zip",
+    "hash": "66c82c14938c0866d57a92eec46e9ac020efb238b0d7c94be1784934e8555dd5",
+    "depends": "mpv",
+    "extract_dir": "mpv-persist-properties-master",
+    "post_install": [
+        "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
+        "Copy-Item -Destination $Target\\scripts -Path $dir\\persist-properties.lua"
+    ],
+    "uninstaller": {
+        "script": [
+            "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
+            "Remove-Item -Path $Target\\scripts\\persist-properties.lua"
+        ]
+    },
+    "checkver": {
+        "url": "https://github.com/d87/mpv-persist-properties/commits/master/",
+        "regex": "<span class=\"Button-label\">([a-z\\d]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/d87/mpv-persist-properties/archive/refs/heads/master.zip"
+    }
+}
