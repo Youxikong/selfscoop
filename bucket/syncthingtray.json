@@ -31,6 +31,7 @@
         "syncthingAutostart=true",
         "\"@",
         "    New-Item -Path $dir\\syncthingtray.ini -ItemType File -Value $Content.replace('\\','/') | Out-Null",
+        "    New-Item -Path $persist_dir\\config -ItemType Directory | Out-Null",
         "}"
     ],
     "uninstaller":{
