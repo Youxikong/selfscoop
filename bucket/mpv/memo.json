@@ -1,0 +1,28 @@
+{
+    "version": "04ec036",
+    "description": "A recent files menu for mpv.",
+    "homepage": "https://github.com/po5/memo",
+    "license": "GPL-3.0",
+    "notes": "Read $dir\\memo.conf and edit settings.conf to configure",
+    "url": "https://github.com/po5/memo/archive/refs/heads/master.zip",
+    "hash": "352b1212bf47c48f73dac7ed05c326984671a6c6190a13462ab309a8cd2ab5de",
+    "depends": "mpv",
+    "extract_dir": "memo-master",
+    "post_install": [
+        "$Target = $(appdir mpv $global) + \"\\current\\portable_config\\scripts\"",
+        "Copy-Item -Path $dir\\memo.lua -Destination $Target -Force"
+    ],
+    "uninstaller": {
+        "script": [
+            "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
+            "Remove-Item -Path $Target\\scripts\\memo.lua"
+        ]
+    },
+    "checkver": {
+        "url": "https://github.com/po5/memo/commits/master/",
+        "regex": "<span class=\"Button-label\">([a-z\\d]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/po5/memo/archive/refs/heads/master.zip"
+    }
+}
