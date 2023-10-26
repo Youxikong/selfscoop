@@ -22,7 +22,15 @@
         "if (Test-Path $persist_dir\\syncthingtray.ini){",
         "    Move-Item -Path $persist_dir\\syncthingtray.ini -Destination $dir",
         "} else {",
-        "    New-Item -Path $dir\\syncthingtray.ini -ItemType File | Out-Null",
+        "$Content = @\"",
+        "[startup]",
+        "useLibSyncthing=true",
+        "libSyncthingConfigDir=$persist_dir/config",
+        "libSyncthingDataDir=$persist_dir/config",
+        "libSyncthingLogLevel=3",
+        "syncthingAutostart=true",
+        "\"@",
+        "    New-Item -Path $dir\\syncthingtray.ini -ItemType File -Value $Content.replace('\\','/') | Out-Null",
         "}"
     ],
     "uninstaller":{
