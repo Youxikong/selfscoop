@@ -15,21 +15,42 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20231027/mpv-x86_64-v3-20231027-git-729f2fe.7z",
-            "hash": "a55ff8f6d218e51f882d3f17726955e649c80afef8dc92e6bb48b3367d766d71"
+            "url": [
+                "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20231027/mpv-x86_64-v3-20231027-git-729f2fe.7z",
+                "https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/mpv.conf",
+                "https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/input_uosc.conf",
+                "https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/profiles.conf",
+                "https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/script-opts.conf"
+            ],
+            "hash": [
+                "a55ff8f6d218e51f882d3f17726955e649c80afef8dc92e6bb48b3367d766d71",
+                "df5035561a2156976b433465565b257a6f708d325dc176acd05e8260de34928e",
+                "001e2cca2b7a571b1666f4bc290d9b1c50a5bdeadcce911519de1c92f490a8ae",
+                "5844a6adfd41845c43cb468cdf44fe6d5ccb01ba8690615f82ece0b707828c76",
+                "e635736d85fa662289e2bdb2884215d307395a27e5e889b6dc00a863d9eaa914"
+            ]
         },
         "32bit": {
-            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20231027/mpv-i686-20231027-git-729f2fe.7z",
-            "hash": "b293be14edb768793a7cb17e25afd48ce76d1839b21ce837f1a16bac5ef36104"
+            "url": [
+                "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20231027/mpv-i686-20231027-git-729f2fe.7z",
+                "https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/mpv.conf",
+                "https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/input_uosc.conf",
+                "https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/profiles.conf",
+                "https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/script-opts.conf"
+            ],
+            "hash": [
+                "b293be14edb768793a7cb17e25afd48ce76d1839b21ce837f1a16bac5ef36104",
+                "df5035561a2156976b433465565b257a6f708d325dc176acd05e8260de34928e",
+                "001e2cca2b7a571b1666f4bc290d9b1c50a5bdeadcce911519de1c92f490a8ae",
+                "5844a6adfd41845c43cb468cdf44fe6d5ccb01ba8690615f82ece0b707828c76",
+                "e635736d85fa662289e2bdb2884215d307395a27e5e889b6dc00a863d9eaa914"
+            ]
         }
     },
     "post_install": [
-        "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/mpv.conf -OutFile $persist_dir\\portable_config\\mpv.conf",
-        "Add-Content -Path $persist_dir\\portable_config\\mpv.conf -Value ' include = \"~~/settings.conf\"'",
-        "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/input_uosc.conf -OutFile $persist_dir\\portable_config\\input_uosc.conf",
-        "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/profiles.conf -OutFile $persist_dir\\portable_config\\profiles.conf",
-        "Invoke-WebRequest -Uri https://raw.githubusercontent.com/hooke007/MPV_lazy/lite/portable_config/script-opts.conf -OutFile $persist_dir\\portable_config\\script-opts.conf",
-        "if ( !( Test-Path $persist_dir\\portable_config\\settings.conf ) ) { New-Item -Path $persist_dir\\portable_config\\settings.conf | Out-Null }"
+        "'mpv.conf','input_uosc.conf','profiles.conf','script-opts.conf' | foreach { Move-Item $dir\\$_ -Destination $dir\\portable_config -Force }",
+        "Add-Content -Path $dir\\portable_config\\mpv.conf -Value ' include = \"~~/settings.conf\"'",
+        "if ( !( Test-Path $dir\\portable_config\\settings.conf ) ) { New-Item -Path $dir\\portable_config\\settings.conf | Out-Null }"
     ],
     "env_add_path": ".",
     "shortcuts": [
