@@ -1,0 +1,28 @@
+{
+    "version": "0e742a0",
+    "description": "Metadata OSD for mpv player",
+    "homepage": "https://github.com/vc-01/metadata-osd",
+    "license": "MIT",
+    "notes": "Read $dir\\script-opts\\metadata_osd.conf and edit settings.conf to configure.",
+    "url": "https://github.com/vc-01/metadata-osd/archive/refs/heads/main.zip",
+    "hash": "94123f25addd297b44a68d1b1c81eb836a6b3d939e0d976a409119285a1f77dc",
+    "depends": "mpv",
+    "extract_dir": "metadata-osd-main",
+    "post_install": [
+        "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
+        "Copy-Item -Destination $Target\\scripts -Path $dir\\scripts\\metadata_osd.lua"
+    ],
+    "uninstaller": {
+        "script": [
+            "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
+            "Remove-Item -Path $Target\\scripts\\metadata_osd.lua"
+        ]
+    },
+    "checkver": {
+        "url": "https://github.com/vc-01/metadata-osd/commits/main/",
+        "regex": "<span class=\"Button-label\">([a-z\\d]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/vc-01/metadata-osd/archive/refs/heads/main.zip"
+    }
+}
