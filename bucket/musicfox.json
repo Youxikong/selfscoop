@@ -10,6 +10,10 @@
             "extract_dir": "go-musicfox_4.3.0_windows_amd64"
         }
     },
+    "pre_install":"if ( !(Test-Path $persist_dir) ){ New-Item $persist_dir -ItemType Directory | Out-Null }",
+    "env_set": {
+        "MUSICFOX_ROOT": "$persist_dir"
+    },
     "bin": "musicfox.exe",
     "checkver": "github",
     "autoupdate": {
