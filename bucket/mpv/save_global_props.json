@@ -1,0 +1,27 @@
+{
+    "version": "9fabefc",
+    "description": "Save properties for mpv.",
+    "homepage": "https://github.com/hooke007/MPV_lazy",
+    "license": "MIT",
+    "notes": "Read source code and edit settings.conf to configure.",
+    "url": "https://raw.githubusercontent.com/hooke007/MPV_lazy/main/portable_config/scripts/save_global_props.lua",
+    "hash": "6f4eed7958a16dc23349b51d01157530a953e08d6ef07f5e12db897f73cc52d3",
+    "depends": "mpv",
+    "post_install": [
+        "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
+        "Copy-Item -Destination $Target\\scripts -Path $dir\\save_global_props.lua"
+    ],
+    "uninstaller": {
+        "script": [
+            "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
+            "Remove-Item -Path $Target\\scripts\\save_global_props.lua"
+        ]
+    },
+    "checkver": {
+        "url": "https://github.com/hooke007/MPV_lazy/commits/main/portable_config/scripts/save_global_props.lua",
+        "regex": "<span class=\"Button-label\">([a-z\\d]+)"
+    },
+    "autoupdate": {
+        "url": "https://raw.githubusercontent.com/hooke007/MPV_lazy/main/portable_config/scripts/save_global_props.lua"
+    }
+}
