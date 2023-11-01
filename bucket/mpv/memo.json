@@ -1,11 +1,11 @@
 {
-    "version": "8cd3f48",
+    "version": "6f2b036",
     "description": "A recent files menu for mpv.",
     "homepage": "https://github.com/po5/memo",
     "license": "GPL-3.0",
     "notes": "Read $dir\\memo.conf and edit settings.conf to configure",
     "url": "https://github.com/po5/memo/archive/refs/heads/master.zip",
-    "hash": "1a4b0d13a5537682d45657eb625e77118ef7cc22e79a9ee29425021a16550e43",
+    "hash": "f2f8f4949b53e36c7b47fb6d4111f4e8fb469c7a4c33c566a0fc05c47471bb68",
     "depends": "mpv",
     "extract_dir": "memo-master",
     "post_install": [
