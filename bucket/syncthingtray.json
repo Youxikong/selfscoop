@@ -13,7 +13,7 @@
         },
         "32bit": {
             "url": "https://github.com/Martchus/syncthingtray/releases/download/v1.4.8/syncthingtray-1.4.8-i686-w64-mingw32.exe.zip",
-            "hash": "436257de0a94cdb0cfb9a1a8be78890b8b94555e11b333a228b661107e5634c1"
+            "hash": "a6b6e3ab81897f53c04aa47e6fe97713b2bdaa917c301fa0fe88f58449b4073f"
         }
     },
     "pre_install": [
