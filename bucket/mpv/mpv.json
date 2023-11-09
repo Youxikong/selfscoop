@@ -1,5 +1,5 @@
 {
-    "version": "20231108",
+    "version": "20231109",
     "description": "Video player based on MPlayer/mplayer2 (builds by shinchiro)",
     "homepage": "https://mpv.io",
     "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
@@ -16,14 +16,14 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20231108/mpv-x86_64-v3-20231108-git-293fe9d.7z",
+                "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20231109/mpv-x86_64-v3-20231109-git-051ba90.7z",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/mpv.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/input_uosc.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/profiles.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/script-opts.conf"
             ],
             "hash": [
-                "af812df2672a963c424a2eaa003649fda9b389e7bf68d7fc2969a91a1be22cf5",
+                "488377d461e8a9095b0ba8fa7e0c24ed4babffba3406b8318178ee8bce705d4c",
                 "9780A92ED0401726C957640C159EA5890EDEC985AC693D4A569FB4D7FAB2C99C",
                 "B05C72965E066FD22AA88604A09334FC3C1FB8F5DC7D1B346291F28BB9DA127E",
                 "5844A6ADFD41845C43CB468CDF44FE6D5CCB01BA8690615F82ECE0B707828C76",
@@ -32,14 +32,14 @@
         },
         "32bit": {
             "url": [
-                "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20231108/mpv-i686-20231108-git-293fe9d.7z",
+                "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20231109/mpv-i686-20231109-git-051ba90.7z",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/mpv.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/input_uosc.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/profiles.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/script-opts.conf"
             ],
             "hash": [
-                "ff469b9f3f0ba08a8f003e9ef7112f8d6012b645dc4891768b8c9cdcaed4d816",
+                "04315fd177d2216a95755a8a3c11d5c0e22e59adc7b8ebc0c566a467b5ea43d7",
                 "9780A92ED0401726C957640C159EA5890EDEC985AC693D4A569FB4D7FAB2C99C",
                 "B05C72965E066FD22AA88604A09334FC3C1FB8F5DC7D1B346291F28BB9DA127E",
                 "5844A6ADFD41845C43CB468CDF44FE6D5CCB01BA8690615F82ECE0B707828C76",
