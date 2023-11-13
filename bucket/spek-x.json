@@ -1,0 +1,26 @@
+{
+    "version": "0.9.3",
+    "description": "Acoustic spectrum analyser",
+    "homepage": "https://github.com/MikeWang000000/spek-X",
+    "license": "Spek Licence",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/MikeWang000000/spek-X/releases/download/v0.9.3/spek-x-0.9.3-windows-x86_64.zip",
+            "hash": "1CFFD3DD96073232F06B3E836AE98313E7FACD190FC02132BF9A683550F18378"
+        }
+    },
+    "shortcuts": [
+        [
+        "spek.exe",
+        "Spek"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/MikeWang000000/spek-X/releases/download/v$version/spek-x-$version-windows-x86_64.zip"
+            }
+        }
+    }
+}
