@@ -1,11 +1,11 @@
 {
-    "version": "80579f3",
+    "version": "108cbd9",
     "description": "Save properties for mpv.",
     "homepage": "https://github.com/hooke007/MPV_lazy",
     "license": "MIT",
     "notes": "Read source code and edit settings.conf to configure.",
     "url": "https://raw.githubusercontent.com/hooke007/MPV_lazy/main/portable_config/scripts/save_global_props.lua",
-    "hash": "bacafeb753a98df5cd6637534728e277c4deff20abb2496d2e1bb2913ddeb784",
+    "hash": "5f57c47017f5caf7c1d38bca418eedfb9dc9ea8cfb631bdae093bd3c18a30e80",
     "depends": "mpv",
     "post_install": [
         "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
