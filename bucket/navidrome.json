@@ -1,19 +1,19 @@
 {
     "homepage": "https://github.com/navidrome/navidrome",
     "description": "Modern Music Server and Streamer compatible with Subsonic/Airsonic",
-    "version": "0.49.3",
+    "version": "0.50.1",
     "license": {
         "identifier": "GPL-3.0",
         "url": "https://github.com/navidrome/navidrome/blob/master/LICENSE"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/navidrome/navidrome/releases/download/v0.49.3/navidrome_0.49.3_Windows_x86_64.zip",
-            "hash": "a5759e0ce32fd10dcde98ee2882c3a45c3283ee03fc56f3b5ec5c28321466ae3"
+            "url": "https://github.com/navidrome/navidrome/releases/download/v0.50.1/navidrome_0.50.1_Windows_amd64.zip",
+            "hash": "058706b70d67fa20c73d3902d62b32e9b4c3cf61415c4cfbde44a9d11818908e"
         },
         "32bit": {
-            "url": "https://github.com/navidrome/navidrome/releases/download/v0.49.3/navidrome_0.49.3_Windows_i386.zip",
-            "hash": "45bd8ad8e4a027844a62d22e49c3037f9107e594aa11f239fe6e838ec8693b92"
+            "url": "https://github.com/navidrome/navidrome/releases/download/v0.50.1/navidrome_0.50.1_Windows_386.zip",
+            "hash": "dbb6714839a3bb72641a6c3dbe6263a1757b49f054c2171fa0874ac62f11a8ec"
         }
     },
     "pre_install": [
@@ -22,9 +22,7 @@
         "New-Item \"$persist_dir\\navidrome.toml\" -ItemType File -Value \"DataFolder = 'C:\\Users\\onetwo\\scoop\\persist\\navidrome'`r`nMusicFolder = '$MusicFolder'\" -Force | Out-Null ",
         "}"
     ],
-    "bin": [
-        "navidrome.exe"
-    ],
+    "bin": "navidrome.exe",
     "env_set": {
         "ND_CONFIGFILE": "$persist_dir\\navidrome.toml"
     },
@@ -33,10 +31,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/navidrome/navidrome/releases/download/v$version/navidrome_$version_Windows_x86_64.zip"
+                "url": "https://github.com/navidrome/navidrome/releases/download/v$version/navidrome_$version_Windows_amd64.zip"
             },
             "32bit": {
-                "url": "https://github.com/navidrome/navidrome/releases/download/v$version/navidrome_$version_Windows_i386.zip"
+                "url": "https://github.com/navidrome/navidrome/releases/download/v$version/navidrome_$version_Windows_386.zip"
             }
         },
         "hash": {
