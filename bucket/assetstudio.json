@@ -1,0 +1,19 @@
+{
+    "version": "1.00.00",
+    "description": "Modded AssetStudio with new features",
+    "homepage": "https://github.com/RazTools/Studio",
+    "license": "MIT",
+    "url": "https://github.com/RazTools/Studio/releases/download/v1.00.00/net7.0-windows.zip",
+    "hash": "1A6F16C36F128818CEAE93604191A3B3084B59BB6EE6F0E9B47E656AE3A79BC5",
+    "bin": "AssetStudioCLI.exe",
+    "shortcuts": [
+        [
+            "AssetStudioGUI.exe",
+            "AssetStudio"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/RazTools/Studio/releases/download/v$version/net7.0-windows.zip"
+    }
+}
