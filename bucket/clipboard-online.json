@@ -1,0 +1,49 @@
+{
+    "version": "0.2.7",
+    "description": "Share content between 💻Windows and 📱iOS or 📱Android",
+    "homepage": "https://github.com/YanxinTang/clipboard-online",
+    "license": "Unlicense",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/YanxinTang/clipboard-online/releases/download/v0.2.7/clipboard-online.exe",
+            "hash": "123252DB2ADD7AF730062878737A8E989017A42A70C47F90560103800B9A9A69"
+        }
+    },
+    "pre_install": [
+        "$config = @'",
+        "{",
+        "    \"port\": \"8086\",",
+        "    \"authkey\": \"\",",
+        "    \"authkeyExpiredTimeout\": 30,",
+        "    \"logLevel\": \"warning\",",
+        "    \"tempDir\": \"./temp\",",
+        "    \"reserveHistory\": false,",
+        "    \"notify\": {",
+        "        \"copy\": true,",
+        "        \"paste\": true",
+        "    }",
+        "}",
+        "'@",
+        "if (!(Test-Path $persist_dir\\log.txt) ) { New-Item -ItemType File -Path \"$dir\\log.txt\" | Out-Null }",
+        "if (!(Test-Path $persist_dir\\config.json)) { New-Item -ItemType File -Path \"$dir\\config.json\" -Value $config | Out-Null }"
+    ],
+    "shortcuts": [
+        [
+            "clipboard-online.exe",
+            "Clipboard-online"
+        ]
+    ],
+    "persist": [
+        "temp",
+        "config.json",
+        "log.txt"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/YanxinTang/clipboard-online/releases/download/v$version/clipboard-online.exe"
+            }
+        }
+    }
+}
