@@ -2,9 +2,9 @@
     "homepage": "https://docs.chaldea.center/",
     "description": "Chaldea - Yet Another Material Planner and Battle Simulator for Fate/Grand Order aka FGO",
     "license": "AGPL-3.0",
-    "version": "2.5.3",
-    "url": "https://github.com/chaldea-center/chaldea/releases/download/v2.5.3/chaldea-2.5.3-windows.zip",
-    "hash": "d6bf432ac945aa53a3bf76670cb48ec4f5656a36169165174ef7cca58e32b42a",
+    "version": "2.5.4",
+    "url": "https://github.com/chaldea-center/chaldea/releases/download/v2.5.4/chaldea-2.5.4-windows.zip",
+    "hash": "c6ab86153dfe6ab393799a0c47097b43c4aa2177d848e38520820c419f2c0e8b",
     "shortcuts": [
         [
             "chaldea.exe",
