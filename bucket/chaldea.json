@@ -4,7 +4,7 @@
     "license": "AGPL-3.0",
     "version": "2.5.4",
     "url": "https://github.com/chaldea-center/chaldea/releases/download/v2.5.4/chaldea-2.5.4-windows.zip",
-    "hash": "c6ab86153dfe6ab393799a0c47097b43c4aa2177d848e38520820c419f2c0e8b",
+    "hash": "sha1:ea7e8dec6322c52bc8c30e5ee8015a34db383d75",
     "shortcuts": [
         [
             "chaldea.exe",
@@ -18,7 +18,7 @@
     "autoupdate": {
         "url": "https://github.com/chaldea-center/chaldea/releases/download/v$version/chaldea-$version-windows.zip",
         "hash": {
-            "url": "https://github.com/chaldea-center/chaldea/releases/download/v$version/chaldea-$version-windows.zip.sha1"
+            "url": "https://github.com/chaldea-center/chaldea/releases/download/v2.5.4/checksums.txt"
         }
     }
 }
