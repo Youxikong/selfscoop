@@ -1,10 +1,10 @@
 {
-    "version": "0.6.9.2117",
+    "version": "0.7.1.2172",
     "description": "MPC Video Renderer",
     "homepage": "https://github.com/Aleksoid1978/VideoRenderer",
     "license": "GPL-3.0",
-    "url": "https://github.com/Aleksoid1978/VideoRenderer/releases/download/0.6.9/MpcVideoRenderer-0.6.9.2117.zip",
-    "hash": "sha1:c5de2ed748ddadb74a81dcd05f45be2352fd4c8b",
+    "url": "https://github.com/Aleksoid1978/VideoRenderer/releases/download/0.7.1/MpcVideoRenderer-0.7.1.2172.zip",
+    "hash": "sha1:cb5d31206c3501ab7faa7f80b5ec1e9214695f87",
     "installer": {
         "script": [
             "if ($architecture -eq \"64bit\") {",
