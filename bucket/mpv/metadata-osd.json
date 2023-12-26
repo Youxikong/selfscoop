@@ -1,11 +1,11 @@
 {
-    "version": "9723721",
+    "version": "c8581ea",
     "description": "Metadata OSD for mpv player",
     "homepage": "https://github.com/vc-01/metadata-osd",
     "license": "MIT",
     "notes": "Read $dir\\script-opts\\metadata_osd.conf and edit settings.conf to configure.",
     "url": "https://github.com/vc-01/metadata-osd/archive/refs/heads/main.zip",
-    "hash": "9644f815969005c8572edc96b2eb64b48004c50ce867ac0e80bfd335d9743cd6",
+    "hash": "4f234863ddfb058f55e6ab43e35c40f7e9e1977adeba9a1d2028b859b9b509cf",
     "depends": "mpv",
     "extract_dir": "metadata-osd-main",
     "post_install": [
