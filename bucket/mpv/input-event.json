@@ -21,7 +21,7 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/natural-harmonia-gropius/input-event/archive/refs/tags/V$version.zip",
+        "url": "https://github.com/natural-harmonia-gropius/input-event/archive/refs/tags/V1.1.zip",
         "extract_dir": "input-event-$version"
     }
 }
