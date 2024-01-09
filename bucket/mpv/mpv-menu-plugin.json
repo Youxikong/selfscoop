@@ -9,12 +9,13 @@
     "extract_dir": "menu",
     "post_install": [
         "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
-        "Copy-Item -Path $dir\\menu.dll -Destination $Target\\scripts -Force"
+        "Get-ChildItem $dir | Copy-Item -Destination $Target\\scripts -Force"
     ],
     "uninstaller": {
         "script": [
             "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
-            "Remove-Item -Path $Target\\scripts\\menu.dll"
+            "Remove-Item -Path $Target\\scripts\\menu.dll",
+            "Remove-Item -Path $Target\\scripts\\dyn_menu.lua"
         ]
     },
     "checkver": "github",
