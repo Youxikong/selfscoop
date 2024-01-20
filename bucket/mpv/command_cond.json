@@ -20,8 +20,9 @@
         ]
     },
     "checkver": {
-        "url": "https://github.com/zhongfly/command_cond/commits/main/",
-        "regex": "<span class=\"Button-label\">([a-z\\d]+)"
+        "url": "https://api.github.com/repos/zhongfly/command_cond/commits",
+        "jsonpath": "$.sha",
+        "regex": "([a-z\\d]{7})"
     },
     "autoupdate": {
         "url": "https://github.com/zhongfly/command_cond/archive/refs/heads/main.zip"

@@ -20,8 +20,9 @@
         ]
     },
     "checkver": {
-        "url": "https://github.com/qwerty12/mpv-taskbar-buttons/commits/master/",
-        "regex": "<span class=\"Button-label\">([a-z\\d]+)"
+        "url": "https://api.github.com/repos/qwerty12/mpv-taskbar-buttons/commits",
+        "jsonpath": "$.sha",
+        "regex": "([a-z\\d]{7})"
     },
     "autoupdate": {
         "url": "https://github.com/qwerty12/mpv-taskbar-buttons/archive/refs/heads/master.zip"

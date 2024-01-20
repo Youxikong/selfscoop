@@ -18,8 +18,9 @@
         ]
     },
     "checkver": {
-        "url": "https://github.com/hooke007/MPV_lazy/commits/main/portable_config/scripts/save_global_props.lua",
-        "regex": "<span class=\"Button-label\">([a-z\\d]+)"
+        "url": "https://api.github.com/repos/hooke007/MPV_lazy/commits",
+        "jsonpath": "$.sha",
+        "regex": "([a-z\\d]{7})"
     },
     "autoupdate": {
         "url": "https://raw.githubusercontent.com/hooke007/MPV_lazy/main/portable_config/scripts/save_global_props.lua"

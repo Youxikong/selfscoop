@@ -20,7 +20,10 @@
             "Remove-Item -Path $Target\\scripts\\SimpleHistory.lua"
         ]
     },
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/Eisa01/mpv-scripts",
+        "regex": "(\\d-)+"
+    },
     "autoupdate": {
         "url": "https://github.com/Eisa01/mpv-scripts/archive/refs/tags/$version.zip",
         "extract_dir": [
