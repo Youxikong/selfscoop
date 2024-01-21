@@ -1,5 +1,5 @@
 {
-    "version": "20240120",
+    "version": "20240121",
     "description": "Video player based on MPlayer/mplayer2 (builds by shinchiro)",
     "homepage": "https://mpv.io",
     "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
@@ -16,39 +16,35 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20240120/mpv-x86_64-v3-20240120-git-5f7ce41.7z",
+                "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20240121/mpv-x86_64-v3-20240121-git-a39f9b6.7z",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/mpv.conf",
-                "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/input_uosc.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/profiles.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/script-opts.conf"
             ],
             "hash": [
-                "2d30fce0a7861f9430af6a35374ace9f54156cb6a59d88ad49b4ed64826e07ac",
+                "a904e2288c6b6b95d53ad4eef8b587140d46b8a315a262abfb05f40d45da2285",
                 "9780A92ED0401726C957640C159EA5890EDEC985AC693D4A569FB4D7FAB2C99C",
-                "92D5A2B716284DAF7BFDC27014456C5B3284097E8C6E7493AB388D5964D5F014",
                 "B1E5B0CBC9FF91C39C8404F9CE7C0055B6826EF48C9E82285047028E6BA032CC",
                 "7A7FFDE284446354009DD043D58C61BB9E413BF8E07347D8BF28F48E722271EF"
             ]
         },
         "32bit": {
             "url": [
-                "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20240120/mpv-i686-20240120-git-5f7ce41.7z",
+                "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20240121/mpv-i686-20240121-git-a39f9b6.7z",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/mpv.conf",
-                "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/input_uosc.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/profiles.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/script-opts.conf"
             ],
             "hash": [
-                "6eb1bae7474365fcd2a899bd16e5c4eec18f55de856c126eab414ef3265f7097",
+                "2175fce4d5d68990ed0e4f9ef7525ab75ea47ffa656b9bc2c35f2f8bab8aad57",
                 "9780A92ED0401726C957640C159EA5890EDEC985AC693D4A569FB4D7FAB2C99C",
-                "92D5A2B716284DAF7BFDC27014456C5B3284097E8C6E7493AB388D5964D5F014",
                 "B1E5B0CBC9FF91C39C8404F9CE7C0055B6826EF48C9E82285047028E6BA032CC",
                 "7A7FFDE284446354009DD043D58C61BB9E413BF8E07347D8BF28F48E722271EF"
             ]
         }
     },
     "post_install": [
-        "'mpv.conf','input_uosc.conf','profiles.conf','script-opts.conf' | foreach { Move-Item $dir\\$_ -Destination $dir\\portable_config -Force }",
+        "'mpv.conf','profiles.conf','script-opts.conf' | foreach { Move-Item $dir\\$_ -Destination $dir\\portable_config -Force }",
         "if ( !( Test-Path $dir\\portable_config\\settings.conf ) ) { New-Item -Path $dir\\portable_config\\settings.conf | Out-Null }"
     ],
     "env_add_path": ".",
