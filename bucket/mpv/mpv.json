@@ -18,14 +18,12 @@
             "url": [
                 "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20240121/mpv-x86_64-v3-20240121-git-a39f9b6.7z",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/mpv.conf",
-                "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/input_uosc.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/profiles.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/script-opts.conf"
             ],
             "hash": [
                 "a904e2288c6b6b95d53ad4eef8b587140d46b8a315a262abfb05f40d45da2285",
                 "9780A92ED0401726C957640C159EA5890EDEC985AC693D4A569FB4D7FAB2C99C",
-                "92D5A2B716284DAF7BFDC27014456C5B3284097E8C6E7493AB388D5964D5F014",
                 "B1E5B0CBC9FF91C39C8404F9CE7C0055B6826EF48C9E82285047028E6BA032CC",
                 "7A7FFDE284446354009DD043D58C61BB9E413BF8E07347D8BF28F48E722271EF"
             ]
@@ -34,21 +32,19 @@
             "url": [
                 "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20240121/mpv-i686-20240121-git-a39f9b6.7z",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/mpv.conf",
-                "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/input_uosc.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/profiles.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/script-opts.conf"
             ],
             "hash": [
                 "2175fce4d5d68990ed0e4f9ef7525ab75ea47ffa656b9bc2c35f2f8bab8aad57",
                 "9780A92ED0401726C957640C159EA5890EDEC985AC693D4A569FB4D7FAB2C99C",
-                "92D5A2B716284DAF7BFDC27014456C5B3284097E8C6E7493AB388D5964D5F014",
                 "B1E5B0CBC9FF91C39C8404F9CE7C0055B6826EF48C9E82285047028E6BA032CC",
                 "7A7FFDE284446354009DD043D58C61BB9E413BF8E07347D8BF28F48E722271EF"
             ]
         }
     },
     "post_install": [
-        "'mpv.conf','input_uosc.conf','profiles.conf','script-opts.conf' | foreach { Move-Item $dir\\$_ -Destination $dir\\portable_config -Force }",
+        "'mpv.conf','profiles.conf','script-opts.conf' | foreach { Move-Item $dir\\$_ -Destination $dir\\portable_config -Force }",
         "if ( !( Test-Path $dir\\portable_config\\settings.conf ) ) { New-Item -Path $dir\\portable_config\\settings.conf | Out-Null }"
     ],
     "env_add_path": ".",
