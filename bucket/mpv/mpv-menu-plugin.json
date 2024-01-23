@@ -1,11 +1,11 @@
 {
-    "version": "2.1.0",
+    "version": "2.2.0",
     "description": "mpv menu plugin",
     "homepage": "https://github.com/tsl0922/mpv-menu-plugin",
     "license": "MIT",
     "depends": "mpv",
-    "url": "https://github.com/tsl0922/mpv-menu-plugin/releases/download/2.1.0/menu.zip",
-    "hash": "b4e96dd0ee9e4025d03a005bc3af58a440d403592d7840cfea8a03463c7c1899",
+    "url": "https://github.com/tsl0922/mpv-menu-plugin/releases/download/2.2.0/menu.zip",
+    "hash": "1301a490f4ddb86f1f114fc281566be176d706687098d04686689683f3a3b217",
     "extract_dir": "menu",
     "post_install": [
         "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
