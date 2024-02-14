@@ -11,7 +11,7 @@
             "enabled": true, // run when CommandTrayHost starts
             // Optional
             "require_admin": false, // to run as administrator, problems keywords: User Interface Privilege Isolation
-            "start_show": false, // whether to show when start process 
+            "start_show": false, // whether to show when start process
             "ignore_all": false, // whether to ignore operation to disable/enable all
             "position": [
                 0.2, // STARTUPINFO.dwX if not greater than 1, it means proportions to screen resolution. Greater than 1, value
@@ -48,8 +48,8 @@
             "is_gui": false,
             "enabled": true,
             // Optional
-            "crontab_config": { 
-                "crontab": "8 */2 15-16 29 2 *", 
+            "crontab_config": {
+                "crontab": "8 */2 15-16 29 2 *",
                 "method": "start", // start restart stop start_count_stop restart_count_stop
                 "count": 0, // times to run, 0 infinite
                 // Optional
