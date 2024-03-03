@@ -1,13 +1,13 @@
 {
-    "version": "1.1",
+    "version": "1.2.1",
     "description": "InputEvent.lua for mpv-player, enhanced input.conf with better, conflict-free, low-latency event mechanism.",
     "homepage": "https://github.com/natural-harmonia-gropius/input-event",
     "license": "MIT",
     "notes": "Read $dir\\README.md and edit settings.conf to configure, better to set 'configs' to '~~/input_settings.conf'.",
     "depends": "mpv",
-    "url": "https://github.com/natural-harmonia-gropius/input-event/archive/refs/tags/V1.1.zip",
-    "hash": "0cdabfc5fd81af5087cedb5540e6a2a144c2dade84885be1e186b00056b9c953",
-    "extract_dir": "input-event-1.1",
+    "url": "https://github.com/natural-harmonia-gropius/input-event/archive/refs/tags/V1.2.1.zip",
+    "hash": "afc61b897f3f7ab7d4b1d3fbdd9f5730ac26316e72fe2344e8317558231f7df5",
+    "extract_dir": "input-event-1.2.1",
     "post_install": [
         "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
         "Copy-Item -Path $dir\\inputevent.lua -Destination $Target\\scripts -Force",
@@ -21,7 +21,7 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/natural-harmonia-gropius/input-event/archive/refs/tags/V1.1.zip",
+        "url": "https://github.com/natural-harmonia-gropius/input-event/archive/refs/tags/V$version.zip",
         "extract_dir": "input-event-$version"
     }
 }
