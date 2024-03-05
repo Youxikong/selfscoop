@@ -20,7 +20,7 @@
     },
     "checkver": {
         "url": "https://api.github.com/repos/vc-01/metadata-osd/commits",
-        "jsonpath": "$.sha",
+        "jsonpath": "$.[0].sha",
         "regex": "([a-z\\d]{7})"
     },
     "autoupdate": {

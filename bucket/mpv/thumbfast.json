@@ -20,7 +20,7 @@
     },
     "checkver": {
         "url": "https://api.github.com/repos/po5/thumbfast/commits",
-        "jsonpath": "$.sha",
+        "jsonpath": "$.[0].sha",
         "regex": "([a-z\\d]{7})"
     },
     "autoupdate": {
