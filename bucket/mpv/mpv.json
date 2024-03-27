@@ -1,5 +1,5 @@
 {
-    "version": "20240326",
+    "version": "20240327",
     "description": "Video player based on MPlayer/mplayer2 (builds by shinchiro)",
     "homepage": "https://mpv.io",
     "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
@@ -16,13 +16,13 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20240326/mpv-x86_64-v3-20240326-git-2af3a6e.7z",
+                "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20240327/mpv-x86_64-v3-20240327-git-2af3a6e.7z",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/mpv.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/profiles.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/script-opts.conf"
             ],
             "hash": [
-                "924e212e31a36a04e19c382d2350814e537fc87e284ea114208911afa4af147d",
+                "07a25158740e03fc06523345ad98c57c835094bec8c751a9aefe254b5fef40e7",
                 "b722865bd7f1358ef27255466aa4fcc1f19d26e9858cd526b274b5bb2e6a208a",
                 "B1E5B0CBC9FF91C39C8404F9CE7C0055B6826EF48C9E82285047028E6BA032CC",
                 "7A7FFDE284446354009DD043D58C61BB9E413BF8E07347D8BF28F48E722271EF"
@@ -30,13 +30,13 @@
         },
         "32bit": {
             "url": [
-                "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20240326/mpv-i686-20240326-git-2af3a6e.7z",
+                "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20240327/mpv-i686-20240327-git-2af3a6e.7z",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/mpv.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/profiles.conf",
                 "https://raw.githubusercontent.com/Youxikong/selfscoop/master/scripts/script-opts.conf"
             ],
             "hash": [
-                "f2ab535f1d99c5fe942089366005df63e47d6bfd7f21a0af5ec2b30a0e8bec21",
+                "9bab05bc165be20d75cabb0901ec87529d24286f1914f41d1e8465c80ce0618a",
                 "b722865bd7f1358ef27255466aa4fcc1f19d26e9858cd526b274b5bb2e6a208a",
                 "B1E5B0CBC9FF91C39C8404F9CE7C0055B6826EF48C9E82285047028E6BA032CC",
                 "7A7FFDE284446354009DD043D58C61BB9E413BF8E07347D8BF28F48E722271EF"
