@@ -1,17 +1,17 @@
 {
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "Windows 10 System Media Transport Controls (SMTC) for MPV (or any other programs)",
     "homepage": "https://github.com/datasone/MPVMediaControl",
     "license": "MIT",
     "notes": "Read $dir\\notify_media.conf and edit settings.conf to configure",
     "depends": "mpv",
     "url": [
-        "https://github.com/datasone/MPVMediaControl/releases/download/0.2.1/MPVMediaControl.exe",
-        "https://github.com/datasone/MPVMediaControl/releases/download/0.2.1/notify_media.conf",
-        "https://github.com/datasone/MPVMediaControl/releases/download/0.2.1/notify_media.lua"
+        "https://github.com/datasone/MPVMediaControl/releases/download/0.2.2/MPVMediaControl.exe",
+        "https://github.com/datasone/MPVMediaControl/releases/download/0.2.2/notify_media.conf",
+        "https://github.com/datasone/MPVMediaControl/releases/download/0.2.2/notify_media.lua"
     ],
     "hash": [
-        "cb03e15ad955d52108b6c0fb5142699fb4aead32ced6efc2976de15febc40805",
+        "82270417c5d454e6b8b29ec8aeebad24ae7b6492d0f4e8bab481158a0c35f920",
         "a7897abf9d3cb2ce40bb539075d8aa58e1f9930d77b8fd775a150cae07c8d3c0",
         "7ca262238d4bfbcf158322487536ae42bd5e0e6a1b083b3840782d49ebd62274"
     ],
