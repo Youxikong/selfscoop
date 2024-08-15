@@ -21,8 +21,8 @@
             "mkdwarfs"
         ],
         [
-            "dwarfsbench.exe",
-            "dwarfsbench"
+            "pxattr.exe",
+            "pxattr"
         ],
         [
             "dwarfsck.exe",
