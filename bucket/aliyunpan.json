@@ -1,25 +1,25 @@
 {
     "homepage": "https://github.com/tickstep/aliyunpan",
     "license": "Apache-2.0",
-    "version": "0.3.3",
+    "version": "0.3.4",
     "suggest": {
         "Icon": "nirsoft/iconsextract"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.3.3/aliyunpan-v0.3.3-windows-x64.zip",
-            "hash": "bf00435e083278398f6ff55e8ee9d29b7cd30a5d1aec8c6ff8443de2338b1570",
-            "extract_dir": "aliyunpan-v0.3.3-windows-x64"
+            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.3.4/aliyunpan-v0.3.4-windows-x64.zip",
+            "hash": "d1cf6fe161456c172be3151b0b25faace593452c9f2279162cb6ceb79dc9b10c",
+            "extract_dir": "aliyunpan-v0.3.4-windows-x64"
         },
         "32bit": {
-            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.3.3/aliyunpan-v0.3.3-windows-x86.zip",
-            "hash": "16c3fca55cd95d94b02338049fd63e6d57a01b93cbf06f5a98c061cf21961e3d",
-            "extract_dir": "aliyunpan-v0.3.3-windows-x86"
+            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.3.4/aliyunpan-v0.3.4-windows-x86.zip",
+            "hash": "2bd9d58f0531b40b551a4ad87b8c87765f709419e025cf4b09c83fd1ae050519",
+            "extract_dir": "aliyunpan-v0.3.4-windows-x86"
         },
         "arm64": {
-            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.3.3/aliyunpan-v0.3.3-windows-arm64.zip",
-            "hash": "38133b49e53a9bd1ea4f948f424dd90a6b3774c1c58b8be6cfa22ba42e9763f8",
-            "extract_dir": "aliyunpan-v0.3.3-windows-arm"
+            "url": "https://github.com/tickstep/aliyunpan/releases/download/v0.3.4/aliyunpan-v0.3.4-windows-arm64.zip",
+            "hash": "248c90b96452b0392949cdf8df57b3afd899bbc79a8a79eacb51707d95db5d16",
+            "extract_dir": "aliyunpan-v0.3.4-windows-arm"
         }
     },
     "bin": "aliyunpan.exe",
