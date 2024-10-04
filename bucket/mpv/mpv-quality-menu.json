@@ -1,17 +1,17 @@
 {
-    "version": "4.1.2",
+    "version": "4.2.0",
     "description": "A userscript for MPV that allows you to change the streamed video and audio quality (ytdl-format) on the fly.",
     "homepage": "https://github.com/christoph-heinrich/mpv-quality-menu",
     "license": "GPL-2.0",
     "notes": "Read $dir\\quality-menu.conf and edit settings.conf to configure",
     "depends": "mpv",
     "url": [
-        "https://github.com/christoph-heinrich/mpv-quality-menu/releases/download/v4.1.2/quality-menu.lua",
-        "https://github.com/christoph-heinrich/mpv-quality-menu/releases/download/v4.1.2/quality-menu.conf"
+        "https://github.com/christoph-heinrich/mpv-quality-menu/releases/download/v4.2.0/quality-menu.lua",
+        "https://github.com/christoph-heinrich/mpv-quality-menu/releases/download/v4.2.0/quality-menu.conf"
     ],
     "hash": [
-        "15a1afacf5d05520003ead769c83a3dec3785041230601fe35cad5a7440ad3e9",
-        "18167acf535b4813165b40044c70d9c9ec205cb4454e1a2e875e005e66d27dcb"
+        "20379b23bcd50b592da926f2e2156e781cdaeb11143c0cf6a21faebff642a023",
+        "da82d04397a3d58e61101dbb716291e8b93de1e75df7cee7e77fb099d5823f0f"
     ],
     "post_install": [
         "$Target = $(appdir mpv $global) + \"\\current\\portable_config\"",
