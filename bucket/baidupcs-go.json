@@ -18,9 +18,7 @@
         }
     },
     "pre_install": [
-        "if(!(Test-Path \"$persist_dir\\\")) { New-Item -Path \"$persist_dir\\\" -ItemType Directory | Out-Null }",
-        "if( Get-Command iconsext.exe ) { iconsext.exe /save $dir\\BaiduPCS-Go.exe $dir -icons",
-        "Rename-Item -Path $dir\\BaiduPCS-Go_2.ico -NewName BaiduPCS.ico}"
+        "if(!(Test-Path \"$persist_dir\\\")) { New-Item -Path \"$persist_dir\\\" -ItemType Directory | Out-Null }"
     ],
     "bin": [
         [
