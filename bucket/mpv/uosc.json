@@ -1,16 +1,16 @@
 {
-    "version": "5.9.1",
+    "version": "5.9.2",
     "description": "Feature-rich minimalist proximity-based UI for MPV player.",
     "homepage": "https://github.com/tomasklaen/uosc",
     "license": "LGPL-2.1-or-later",
     "notes": "Read $dir\\uosc.conf and edit settings.conf to configure",
     "depends": "mpv",
     "url": [
-        "https://github.com/tomasklaen/uosc/releases/download/5.9.1/uosc.zip",
-        "https://github.com/tomasklaen/uosc/releases/download/5.9.1/uosc.conf"
+        "https://github.com/tomasklaen/uosc/releases/download/5.9.2/uosc.zip",
+        "https://github.com/tomasklaen/uosc/releases/download/5.9.2/uosc.conf"
     ],
     "hash": [
-        "2814c4beef69b4d63e85581356a6c1990c828765f9f90df856ab553666ab7663",
+        "c04d93a79bd11d9708cf8fd910c3b8529feba127f939a145f19c2044fd9f22a1",
         "eb8bda367ae9560f9940cf01ca9b592b41ca53c2689ce836992298be3e6d4e41"
     ],
     "post_install": [
