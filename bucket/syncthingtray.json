@@ -38,6 +38,9 @@
         "script": "Move-Item -Path $dir\\syncthingtray.ini -Destination $persist_dir"
     },
     "bin": "syncthingtray-cli.exe",
+    "env_set":{
+        "SYNCTHINGTRAY_CONFIG_DIR": "$dir"
+    },
     "shortcuts": [
         [
             "syncthingtray.exe",
