@@ -1,16 +1,16 @@
 {
-    "version": "4.2.0",
+    "version": "4.2.1",
     "description": "A userscript for MPV that allows you to change the streamed video and audio quality (ytdl-format) on the fly.",
     "homepage": "https://github.com/christoph-heinrich/mpv-quality-menu",
     "license": "GPL-2.0",
     "notes": "Read $dir\\quality-menu.conf and edit settings.conf to configure",
     "depends": "mpv",
     "url": [
-        "https://github.com/christoph-heinrich/mpv-quality-menu/releases/download/v4.2.0/quality-menu.lua",
-        "https://github.com/christoph-heinrich/mpv-quality-menu/releases/download/v4.2.0/quality-menu.conf"
+        "https://github.com/christoph-heinrich/mpv-quality-menu/releases/download/v4.2.1/quality-menu.lua",
+        "https://github.com/christoph-heinrich/mpv-quality-menu/releases/download/v4.2.1/quality-menu.conf"
     ],
     "hash": [
-        "20379b23bcd50b592da926f2e2156e781cdaeb11143c0cf6a21faebff642a023",
+        "a5fdbfdc9bd90d87ca12a3429873d08ee46eab658d3d7835d2414eb416c463d0",
         "da82d04397a3d58e61101dbb716291e8b93de1e75df7cee7e77fb099d5823f0f"
     ],
     "post_install": [
