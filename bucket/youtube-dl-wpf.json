@@ -1,11 +1,11 @@
 {
-    "version": "1.12.2",
+    "version": "1.13.0",
     "description": "A simple GUI wrapper for youtube-dl and yt-dlp.",
     "homepage": "https://github.com/database64128/youtube-dl-wpf",
     "license": "GPL-3.0-only",
     "depends": "dotnet-sdk",
-    "url": "https://github.com/database64128/youtube-dl-wpf/releases/download/v1.12.2/youtube-dl-wpf-v1.12.2-windows.7z",
-    "hash": "B9F7C889FCC41323B67529A44DD298B3BD58F8EE089136DEDEF969B59DC99D97",
+    "url": "https://github.com/database64128/youtube-dl-wpf/releases/download/v1.13.0/youtube-dl-wpf-v1.13.0-windows.7z",
+    "hash": "f995b4f7183dd76d53640df09cb17ca68c469c6b3ae3d948aed804c93a061433",
     "post_install": [
         "if (Test-Path $persist_dir\\Settings.json){",
         "    Move-Item -Path $persist_dir\\Settings.json -Destination $dir",
