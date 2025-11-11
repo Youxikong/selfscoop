@@ -1,11 +1,11 @@
 {
-    "version": "1.4",
+    "version": "1.5",
     "description": "menubarX for windows",
     "homepage": "https://github.com/cornradio/tray-chrome",
     "notes": "Data stored in %APPDATA%\\TrayChrome\\",
     "license": "none",
-    "url": "https://github.com/cornradio/tray-chrome/releases/download/v1.4/TrayChrome.exe",
-    "hash": "94f3c25b35882e5683d795f70fd9af309bf964de677e94e9056eec58596903a5",
+    "url": "https://github.com/cornradio/tray-chrome/releases/download/v1.5/TrayChrome.exe",
+    "hash": "c799f424da642f61e5e14e9036440cca9340673205c603e1e4220bc180197c92",
     "shortcuts": [
         [
             "traychrome.exe",
