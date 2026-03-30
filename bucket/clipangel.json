@@ -1,10 +1,10 @@
 {
-    "version": "2.21",
+    "version": "2.22",
     "description": "Clipboard history capture and paste tool.",
     "homepage": "https://sourceforge.net/projects/clip-angel/",
     "license": "GPL-3.0",
-    "url": "https://sourceforge.net/projects/clip-angel/files/ClipAngel%202.21.zip/download#/dl.zip",
-    "hash": "e90328dfa1167656a76d86f23d495bcaa02345583a1be28e08f8af78e35393df",
+    "url": "https://sourceforge.net/projects/clip-angel/files/ClipAngel%202.22.zip/download#/dl.zip",
+    "hash": "ebfb8561dd99b0b19e5514864949f844d710d18913eef825b53bf60acf366e91",
     "shortcuts": [
         [
             "ClipAngel.exe",
