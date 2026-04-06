@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/go-musicfox/go-musicfox/releases/download/v4.8.1/go-musicfox_4.8.1_windows_amd64.zip",
-            "hash": "DD2CB40D6A6B978C82D3D109BC75D79F48ECCF1D47654C993E91918A34F73222",
+            "hash": "dbeb6fa277300b9d1da2a57404ea8919980ab991b8d4a4e14b760fd7061739d1",
             "extract_dir": "go-musicfox_4.8.1_windows_amd64"
         }
     },
