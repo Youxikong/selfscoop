@@ -1,19 +1,19 @@
 {
     "homepage": "https://github.com/navidrome/navidrome",
     "description": "Modern Music Server and Streamer compatible with Subsonic/Airsonic",
-    "version": "0.61.1",
+    "version": "0.61.2",
     "license": {
         "identifier": "GPL-3.0",
         "url": "https://github.com/navidrome/navidrome/blob/master/LICENSE"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/navidrome/navidrome/releases/download/v0.61.1/navidrome_0.61.1_Windows_amd64.zip",
-            "hash": "2e444b62e4ba28aabc87d1b6981e2cfa9d6d1f277309b4599263c74e36a2d41a"
+            "url": "https://github.com/navidrome/navidrome/releases/download/v0.61.2/navidrome_0.61.2_Windows_amd64.zip",
+            "hash": "edf3267a402040a840e0e15b0f1ff7e3e59b907e55aaf62b078bb7a4216fa368"
         },
         "32bit": {
-            "url": "https://github.com/navidrome/navidrome/releases/download/v0.61.1/navidrome_0.61.1_Windows_386.zip",
-            "hash": "5168859862f30d803afe46c58840c4564043218881bdde0f3766d0b52fbbeac2"
+            "url": "https://github.com/navidrome/navidrome/releases/download/v0.61.2/navidrome_0.61.2_Windows_386.zip",
+            "hash": "96d4771485202e7965859079531eb93fb31f2c780764a02f5d4ada46a876cc48"
         }
     },
     "pre_install": [
