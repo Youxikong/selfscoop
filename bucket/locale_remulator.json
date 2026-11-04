@@ -17,8 +17,7 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/InWILL/Locale_Remulator",
-        "regex": "/releases/tag/v([\\w.-]+)"
+        "github": "https://github.com/InWILL/Locale_Remulator"
     },
     "autoupdate": {
         "url": "https://github.com/InWILL/Locale_Remulator/releases/download/v$version/Locale_Remulator.$version.zip",
