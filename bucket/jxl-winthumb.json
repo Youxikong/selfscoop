@@ -6,12 +6,12 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/saschanaz/jxl-winthumb/releases/download/v0.2.14/jxl-winthumb-x86_64-pc-windows-msvc.zip",
-                "https://github.com/saschanaz/jxl-winthumb/releases/download/v0.2.14/jxl-winthumb-i686-pc-windows-msvc.zip"
+                "https://github.com/saschanaz/jxl-winthumb/releases/download/v0.2.14/jxl-winthumb-i686-pc-windows-msvc.zip",
+                "https://github.com/saschanaz/jxl-winthumb/releases/download/v0.2.14/jxl-winthumb-x86_64-pc-windows-msvc.zip"
             ],
             "hash": [
-                "294af3fcd927100ff93a53eaa184acdce826b00aca58554cd2d1613eef22feb0",
-                "e7dd30077268fdfa327ef4c53e17077727b665be782855fb94ef491699fef7e1"
+                "e7dd30077268fdfa327ef4c53e17077727b665be782855fb94ef491699fef7e1",
+                "294af3fcd927100ff93a53eaa184acdce826b00aca58554cd2d1613eef22feb0"
             ]
         },
         "32bit": {
@@ -24,14 +24,14 @@
         }
     },
     "extract_to": [
-        "x64",
-        "x86"
+        "x86",
+        "x64"
     ],
     "installer": {
         "script": [
             "'x64\\jxl_winthumb.dll', 'x86\\jxl_winthumb.dll' | foreach {",
             "    if ( Test-Path $dir\\$_ ) {",
-            "        $Arg = \"/s \" + \"$dir\\$_\"",
+            "        $Arg = '/s ' + '$dir\\$_'",
             "        Start-Process regsvr32.exe -Verb RunAs -ArgumentList $Arg -Wait",
             "    }",
             "}"
@@ -39,10 +39,12 @@
     },
     "uninstaller": {
         "script": [
-            "'x64\\jxl_winthumb.dll', 'x86\\jxl_winthumb.dll' | foreach {",
-            "    if ( Test-Path $dir\\$_ ) {",
-            "        $Arg = \"/u /s \" + \"$dir\\$_\"",
-            "        Start-Process regsvr32.exe -Verb RunAs -ArgumentList $Arg -Wait",
+            "if ($cmd -eq 'uninstall') {",
+            "    'x64\\jxl_winthumb.dll', 'x86\\jxl_winthumb.dll' | foreach {",
+            "        if ( Test-Path $dir\\$_ ) {",
+            "            $Arg = '/u /s ' + '$dir\\$_'",
+            "            Start-Process regsvr32.exe -Verb RunAs -ArgumentList $Arg -Wait",
+            "        }",
             "    }",
             "}"
         ]
@@ -54,8 +56,8 @@
         "architecture": {
             "64bit": {
                 "url": [
-                    "https://github.com/saschanaz/jxl-winthumb/releases/download/v$version/jxl-winthumb-x86_64-pc-windows-msvc.zip",
-                    "https://github.com/saschanaz/jxl-winthumb/releases/download/v$version/jxl-winthumb-i686-pc-windows-msvc.zip"
+                    "https://github.com/saschanaz/jxl-winthumb/releases/download/v$version/jxl-winthumb-i686-pc-windows-msvc.zip",
+                    "https://github.com/saschanaz/jxl-winthumb/releases/download/v$version/jxl-winthumb-x86_64-pc-windows-msvc.zip"
                 ]
             },
             "32bit": {
