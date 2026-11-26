@@ -1,11 +1,11 @@
 {
-    "version": "0f711de",
+    "version": "3b02f84",
     "description": "High-performance on-the-fly thumbnailer script for mpv",
     "homepage": "https://github.com/po5/thumbfast",
     "license": "MPL-2.0",
     "notes": "Read $dir\\thumbfast.conf and edit settings.conf to configure",
     "url": "https://github.com/po5/thumbfast/archive/refs/heads/master.zip",
-    "hash": "3c2bd44ad9bb075477b798ac414b0c9ec4482881695ac56f6b7b2384e8cee77b",
+    "hash": "db2d9479b20a64d5c937e10cd897da0c089f1944c51c1f3f5abc9902df45e0b8",
     "depends": "mpv",
     "extract_dir": "thumbfast-master",
     "post_install": [
